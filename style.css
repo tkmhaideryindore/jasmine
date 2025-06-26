@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.status-display {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: none;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.status-display.active {
+  display: block;
+}
+
+.status-display.valid {
+  color: #28a745;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.status-display.invalid {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+}
+
+.clear-btn:hover {
+  background-color: #c82333;
+}
+
+.view-btn {
+  background-color: #17a2b8;
+}
+
+.view-btn:hover {
+  background-color: #138496;
+}
+
+.test-btn {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.test-btn:hover {
+  background-color: #e0a800;
+}

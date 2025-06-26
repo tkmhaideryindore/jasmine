@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google Sheet Search</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Enter ITS ID...">
+      <button onclick="searchSheet()">Search</button>
+    </div>
+    <div id="statusDisplay" class="status-display"></div>
+    <div class="log-controls">
+      <!--<button onclick="downloadLogs()" class="log-btn">Download Local Logs</button>-->
+      <!--<button onclick="clearLogs()" class="log-btn clear-btn">Clear Local Logs</button>-->
+      <!--<button onclick="openGoogleSheet()" class="log-btn view-btn">View All Logs</button>-->
+      <!--<button onclick="testGoogleSheetsLogging()" class="log-btn test-btn">Test Sheets Logging</button>-->
+      <span id="logCount" class="log-count">Local Logs: 0</span>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js?v=1.0.4"></script>
+</body>
+</html>
